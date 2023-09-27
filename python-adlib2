@@ -1,0 +1,57 @@
+# I am writing a program to help me quickly generate lesson prompts
+# the prompts will be tailored to my specific interests
+# they need to generate lesson prompts that are relevant to high level goals
+# and high level interests
+# so that while learning the user finds the information relevant
+
+# Write an introductory print
+print("Hello! I am a program that creates lesson prompts for LLMs!")
+
+# Give me the specific subject or element of a subject you want to learn
+subject_element = input("In a few words describe what you want to learn: ")
+
+# Then give me the general category that this subject or element is a part of
+category = input("What general category does this subject fall under: ")
+
+# Give me several high-level goals you want to achieve
+goals_long = input("Great! In one or more sentences describe your high-level, long-term goals (think life goals): ")
+
+# Give me several high-level goals you want to achieve
+goals_short = input("Thank you! In one or more sentences describe your short-term goals (think things you want to achieve in the next couple of months or years): ")
+
+# Give me some of your interests, what are you interested in generally
+interests = input("Interesting. Now in one or more sentences describe your interests: ")
+
+# Ask the user if they want to put a specific emphasis on anything else
+# If yes, ask them what that is and store it as a value
+# If not, continue on to print
+emphasis = "They did not ask to put an emphasis on anything so assume they want deep information on everything"
+emphasis_prompter = input("Do you want to put an emphasis on anything else? type yes or no: ")
+if emphasis_prompter == "yes":
+    emphasis = input("Describe in a few words what should be emphasized in this lesson: ")
+
+# Print a prompt that is an adlib
+# the adlib'd prompt should include the specific subject
+# and the general category it falls in
+# The prompt should ask the LLM to be very extensive
+# and cover all of the important details
+print("Here is your prompt:")
+print("")
+print("Hello, please create an in-depth lesson for the user.")
+print("This is how the user described what they want to learn: ")
+print(subject_element)
+print("According to them this is the general category of what they are learning: ")
+print(category)
+print("Make the lesson you generate relevant to their high-level, long-term goals. They describe them here: ")
+print(goals_long)
+print("Also try to make it relevant to their more immediate, short-term goals, provided here: ")
+print(goals_short)
+print("Please make this lesson relevant to their interests, provided here:")
+print(interests)
+print("They may have also opted to indicate they want an emphasis. Please make the lesson relevant to their emphasis, provided here: ")
+print(emphasis)
+print("Now that you have this information please produce a very high-quality, in-depth, and cohesive lesson.")
+print("There should be summaries of important information, relevant examples, and an ending summation tying the lesson together.")
+print("At the very end provide a few challenge questions for the user to test their comprehension and apply what the lesson teaches.")
+print("Add at least one challenge question that is relevant to the user's short or long-term goals.")
+print("Thank You!")
