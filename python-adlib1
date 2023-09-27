@@ -1,0 +1,22 @@
+#V 0.1
+#I am writing a short progam to generate prompts regarding what I am interested in
+#I am hoping this will help my learn faster by making the information relevant to me and my interests and goals
+
+
+n = input("type in the subject you want to learn to generate the prompt you want: ")
+
+print(
+"Write me a lesson on " + n + " and their use in python."
+" I want to know what their relevance is, what are they used for in software development?"
+" What about the gaming development industry?"
+" How do they fit into a computer program?"
+" Maybe a little something about their history in computer programs generally."
+" I need you to cover everything about " + n + " and their relevancy to me as an aspiring programmer and entrepreneur."
+" I want to make software and games that make money."
+" How are " + n + " relevant?"
+" I want to meet peoples needs, how are " + n + " relevant?"
+" Provide me a challenge at the end based on the concepts you have taught me."
+)
+
+#notes: add input fucntion and several other adlibs to imporve and personalize interests
+#this will create a dynamic program that can be used for any subject
